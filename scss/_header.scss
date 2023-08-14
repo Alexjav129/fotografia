@@ -1,0 +1,47 @@
+/* Header*/
+
+@mixin anclas {
+  text-decoration: none;
+  color: $color-fuentes;
+  font-size: 36px;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  height: 100px;
+
+  .tituloPrincipal {
+    @include anclas;
+
+    i {
+      font-size: 40px;
+      color: $color-botones;
+    }
+
+    h1 {
+      display: inline-block;
+      color: $color-fuentes;
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+
+    li {
+      margin-right: 30px;
+    }
+
+    a {
+      @include anclas;
+      &:hover {
+        color: $color-fuentes-secundario;
+      }
+    }
+  }
+}
