@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+/*Estilos Generales */
+body {
+  background-color: #161718;
+  color: #fafafa;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header*/
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  height: 100px;
+}
+.encabezado .tituloPrincipal {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 36px;
+}
+.encabezado .tituloPrincipal i {
+  font-size: 40px;
+  color: #27a776;
+}
+.encabezado .tituloPrincipal h1 {
+  display: inline-block;
+  color: #fafafa;
+  font-size: 40px;
+  font-weight: 700;
+}
+.encabezado ul {
+  display: flex;
+  list-style-type: none;
+}
+.encabezado ul li {
+  margin-right: 30px;
+}
+.encabezado ul a {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 36px;
+}
+.encabezado ul a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*Hero*/
+.hero {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: inline-block;
+  position: relative;
+}
+.hero h2 {
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 500;
+}
+.hero h2 span {
+  font-weight: 700;
+  position: relative;
+  padding: 0 5px;
+}
+.hero h2 span::before {
+  content: "";
+  position: absolute;
+  height: 30%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 4px;
+  background-color: #27a776;
+  z-index: -1;
+}
+.hero p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.hero a {
+  background-color: #27a776;
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 36px;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.hero a:hover {
+  background-color: #2cbc85;
+}
+
+/*Galeria*/
+.introGaleria {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #27a776;
+  margin-bottom: 30px;
+}
+.introGaleria h2 {
+  color: #fafafa;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.imagenGaleria {
+  border-radius: 10px;
+  padding: 4px;
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(50%);
+  transition: all 1s;
+}
+.imagenGaleria:hover {
+  filter: grayscale(0);
+}
+
+@media (max-width: 767px) {
+  .imagenGaleria {
+    max-width: 90%;
+    margin: auto;
+  }
+  .tituloPrincipal {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
